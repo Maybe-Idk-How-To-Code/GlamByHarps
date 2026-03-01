@@ -10878,7 +10878,8 @@ p {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #212529;
+  background-color: #D29F51;
+  /* NAV BAR MOBILE VERSION COLOUR */
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -10912,7 +10913,8 @@ p {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border: none;
-    background-color: transparent;
+    background-color: #D29F51; 
+    /* NAV BAR COLOUR */
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -10926,7 +10928,7 @@ p {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #212529;
+    background-color: #D29F51;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -10951,7 +10953,7 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll; /* change to 'fixed' if you want parallax effect */
   background-position: center center;
-  background-size: cover; /* ensures image covers the entire area */
+  background-size: auto; /* ensures image covers the entire area */
   width: 100%;
   height: 100vh; /* makes header take full viewport height */
 }
@@ -10961,7 +10963,7 @@ header.masthead .masthead-subheading {
   line-height: 1.5rem;
   margin-bottom: 25px;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: var(--bs-purple);
+  color: #D29F51;  /* Font color for main page */
 }
 header.masthead .masthead-heading {
   font-size: 3.25rem;
@@ -10969,7 +10971,7 @@ header.masthead .masthead-heading {
   line-height: 3.25rem;
   margin-bottom: 2rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: var(--bs-purple);
+  color: #D29F51;  /* Font color for main page */
 }
 
 @media (min-width: 768px) {
