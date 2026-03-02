@@ -11023,9 +11023,9 @@ header.masthead .masthead-heading {
 
 @media (max-width: 767px) {
   header.masthead {
-    background-position: center 25%; /* adjust if face needs shifting */
+    background-position: center 20%; /* adjust if face needs shifting */
     align-items: flex-end;           /* move text lower */
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
   }
 }
 
