@@ -11262,16 +11262,52 @@ header.masthead .masthead-heading {
   height: 2.75rem;
 }
 
-section#contact {
+/* oringial code, below i have addedc @media tablets,mobiles and make button stack */
+/* section#contact { */
   /* background-color: ; */
-  background-image: url("../assets/img/hand-drawn-floral-wallpaper.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  /* background-image: url("../assets/img/hand-drawn-floral-wallpaper.png"); */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+/* } */
+
+/* Base styling for desktop */
+section#contact {
+    background-color: #fff; 
+    background-image: url("../assets/img/hand-drawn-floral-wallpaper.png");
+    background-repeat: no-repeat;
+    background-size: cover;             /* fill section while keeping aspect ratio */
+    background-position: center center; /* desktop default */
+    padding: 80px 20px;                 /* space for content */
+    color: #333;                         /* default text color */
+}
+
+/* Tablets / iPads (between 769px and 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+    section#contact {
+        background-position: center 30%; /* shift image slightly up for focal point */
+        padding: 60px 15px;
+    }
+}
+
+/* Mobile Phones (up to 768px) */
+@media (max-width: 768px) {
+    section#contact {
+        background-position: center top;  /* focus on top for small screens */
+        padding: 50px 10px;
+    }
+
+    /* Make buttons stack nicely on small screens */
+    section#contact .text-center a {
+        display: block;
+        margin: 10px auto;
+        width: 80%; /* optional: buttons take more horizontal space */
+    }
 }
 section#contact .section-heading {
   /* color: #fff; */
   color:#000;
 }
+
 section#contact form#contactForm .form-group {
   margin-bottom: 1.5rem;
 }
