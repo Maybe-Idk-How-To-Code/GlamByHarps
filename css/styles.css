@@ -10950,13 +10950,16 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/mainPage_Background.jpg");
+  background-image: url("../assets/img/mainPage_Background_4.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll; /* change to 'fixed' if you want parallax effect */
-  background-position: center center;
+  /* background-position: center center;
   background-size: auto; /* ensures image covers the entire area */
+  background-position: center center;
+  background-size: cover; /* ensures image covers the entire area */
   width: 100%;
   height: 100vh; /* makes header take full viewport height */
+  
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
