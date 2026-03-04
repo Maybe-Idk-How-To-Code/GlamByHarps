@@ -1,12 +1,3 @@
-/*!
-* Start Bootstrap - Agency v7.0.12 (https://startbootstrap.com/theme/agency)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
-
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -52,3 +43,21 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+// Email parts
+const user = "glambyharps";
+const domain = "outlook.com";
+const email = `${user}@${domain}`;
+
+// Insert email into the page
+const emailDisplay = document.getElementById("email-display");
+if(emailDisplay) {
+    emailDisplay.innerHTML = `<a href="mailto:${email}">${email}</a>`;
+}
+
+// Update the email button
+const emailBtn = document.getElementById("email-btn");
+if(emailBtn) {
+    emailBtn.href = `mailto:${email}`;
+    emailBtn.innerText = "Email Me";
+}
